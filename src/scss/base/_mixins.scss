@@ -47,3 +47,20 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin headingsCursivos() {
+    text-align: center;
+    color: v.$secundario;
+    font-family: v.$fuenteCursiva;
+    line-height: .7;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 4rem;
+
+    span{
+        display: block;
+        color: v.$negro;
+        font-family: v.$fuentePrincipal;
+        text-transform: uppercase;
+    }
+}

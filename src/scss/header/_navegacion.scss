@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.navegacion {
+  background-color: v.$primario;
+  padding: 0.5rem 0;
+  &__border {
+    border-top: 1px dashed v.$blanco;
+    border-bottom: 1px dashed v.$blanco;
+  }
+  &__contenedor {
+    @include m.tablet {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__enlace {
+    display: block;
+    color: v.$blanco;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
